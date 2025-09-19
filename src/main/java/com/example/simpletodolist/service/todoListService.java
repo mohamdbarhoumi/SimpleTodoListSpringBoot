@@ -30,4 +30,15 @@ public class todoListService {
         return repo.findById(id);
 
     }
+
+    public todoList addTask(todoList t) {
+        return repo.save(t);
+    }
+
+    public todoList updateTask(todoList t) {
+        return repo.save(t);
+    }
+    public void delTask(int id){
+        repo.deleteById(id);
+    }
 }
